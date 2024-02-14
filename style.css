@@ -2,7 +2,12 @@
     font-family: neu;
     src: url(./NeueHaasDisplayMediu.ttf);
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neu;
+}
 @font-face {
     font-family: neu;
     font-weight: 100;
@@ -690,3 +695,158 @@ nav h3 {
     }
 }
 
+@media (max-width: 600px) {
+
+    #page1 {
+        padding: 0 5vw;
+    }
+
+    nav {
+        padding: 8vw 5vw;
+    }
+
+    nav img {
+        height: 9vh;
+    }
+
+    #nav-part2 {
+        display: none;
+    }
+
+    nav h3 {
+        display: block;
+        padding: 3vw 5vw;
+        border: 1px solid #ababab;
+        border-radius: 50px;
+        font-size: 4vw;
+        font-weight: 200;
+        padding-left: 10vw;
+    }
+
+    #center {
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 7vw 5vw;
+        padding-bottom: 10vw;
+    }
+
+    #left h3 {
+        width: 80%;
+        font-size: 5.5vw;
+        line-height: 6vw;
+    }
+
+    #center h1 {
+        font-size: 17vw;
+        text-align: right;
+        line-height: 15vw;
+    }
+
+    #page1 video {
+        margin-top: 4vw;
+        height: 70vh;
+        width: 92%;
+        margin-left: 4%;
+    }
+
+
+    #loader h1{
+        font-size: 9vw;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#page2-bottom {
+    text-align: center;
+    /* padding: 20px; */
+}
+
+#page2-bottom h2 {
+    font-size: 24px;
+}
+
+#page2-bottom h1 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#bottom-part2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+#bottom-part2 p {
+    font-size: 14px;
+}
+
+#gooey {
+    height: 100px; 
+}
+
+@media (max-width: 768px) {
+    #page2-bottom h2 {
+        font-size: 20px;
+    }
+
+    #page2-bottom h1 {
+        font-size: 16px;
+    }
+
+    #bottom-part2 p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #page2-bottom h2 {
+        font-size: 18px;
+    }
+
+    #page2-bottom h1 {
+        font-size: 14px;
+    }
+
+    #bottom-part2 p {
+        font-size: 10px;
+    }
+}
+
+#elem-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.elem {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.elem img {
+    width: 100%;
+    height: auto;
+}
+
+.elem h2 {
+    font-size: 18px;
+}
+
+.elem h3 {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .elem {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .elem {
+        flex-basis: calc(100% - 20px);
+    }
+}
